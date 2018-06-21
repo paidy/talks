@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Paidy - Markdown Template</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/solarized-dark.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <!-- <section data-background="assets/paidy-intro-http4s.png"></section> -->
+        <section data-markdown="paidy/01-intro.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/02-about-me.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/03-agenda.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/04-what-is-cats-effect.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/05-effects-vs-side-effects.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/06-referential-transparency.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/07-sync.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/08-async.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/09-error-handling.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/10-bracket.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/11-resource.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/12-concurrency.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/13-parallelism.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/14-cancellation.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-markdown="paidy/questions.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-background="assets/paidy-content.png"></section>
+        <section data-background="assets/paidy-outro.png">
+          <div style="margin-top: 43%;">
+            <h1><a href="https://engineering.paidy.com/" target="_blank">We are hiring!</a></h1>
+            <a href="https://engineering.paidy.com/" target="_blank">https://engineering.paidy.com/</a>
+          </div>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script src="../plugin/highlight/highlight.js"></script>
+		<script src="../plugin/markdown/marked.js"></script>
+		<script src="../plugin/markdown/markdown.js"></script>
+		<script src="qunit-1.12.0.js"></script>
+
+    <!-- PDF export -->
+    <script>
+	    var link = document.createElement( 'link' );
+    	link.rel = 'stylesheet';
+    	link.type = 'text/css';
+    	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	    document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+		<script src="paidy/paidy-markdown.js"></script>
+
+  </body>
+</html>
