@@ -10,6 +10,6 @@ def echo[F[_]: Monad](console: ConsoleIO[F]): F[String] =
     result <- if (appended == '#')
                 console.printLine(result).map(_ => result)
               else 
-                result.pure
+                appended.pure
   } yield result
 ```

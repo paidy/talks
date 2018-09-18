@@ -17,14 +17,25 @@ No.
 
 
 - There's something more to `Monad`s than just exposing sequencing interfaces. 
-- Any effect type `F` that implements the `Monad` interface needs to be pure values, meaning **ALL** effect, should be contained within `F`.
-- This is called Monad Laws.
 
-<!-- .element: class="fragment" data-fragment-index="1" --> For example, using `scala.concurrent.Future` to do IO or other side effects breaks referential transparency. 
-<!-- .element: class="fragment" data-fragment-index="2" --> It is not possible to even test lawfulness in such cases.
+<!-- .element: class="fragment" data-fragment-index="1" --> The values describing business logic should only **DESCRIBE** the operation, not **DO** anything
+
+<!-- .element: class="fragment" data-fragment-index="1" --> Referential Transparency
+
+<!-- .element: class="fragment" data-fragment-index="2" --> Whole point is to decouple logic with an execution strategy
 
 
-Why is that law important?
+<!-- .element: class="fragment" data-fragment-index="3" --> Any `Monad` implementation needs to pass certain tests.
+
+<!-- .element: class="fragment" data-fragment-index="3" --> Monad Laws
+
+
+For example, using `scala.concurrent.Future` to do IO or other side effects breaks referential transparency.
+
+<!-- .element: class="fragment" data-fragment-index="5" --> It is not possible to even test lawfulness in such cases.
+
+
+Why is RT and law important?
 ```scala
 //printAndReturnOne: scala.concurrent.Future[Int]
 for {
