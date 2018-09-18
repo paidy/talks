@@ -20,7 +20,8 @@ No.
 - Any effect type `F` that implements the `Monad` interface needs to be pure values, meaning **ALL** effect, should be contained within `F`.
 - This is called Monad Laws.
 
-<!-- .element: class="fragment" data-fragment-index="1" -->  For example, using `scala.concurrent.Future` to do IO or other side effects makes it unlawful.
+<!-- .element: class="fragment" data-fragment-index="1" --> For example, using `scala.concurrent.Future` to do IO or other side effects breaks referential transparency. 
+<!-- .element: class="fragment" data-fragment-index="2" --> It is not possible to even test lawfulness in such cases.
 
 
 Why is that law important?
