@@ -1,13 +1,9 @@
 #### More effects
 
 ```java
-int addOnePrimitive(int i) {
-  return i + 1
-}
+int addOnePrimitive(int i)
 
-Integer addOneBox(Integer i) {
-  return i + 1
-}
+Integer addOneBox(Integer i)
 ```
 
 

@@ -20,7 +20,7 @@ No.
 - Any effect type `F` that implements the `Monad` interface needs to be pure values, meaning **ALL** effect, should be contained within `F`.
 - This is called Monad Laws.
 
-<!-- .element: class="fragment" data-fragment-index="1" -->  For example, `scala.concurrent.Future` is not lawful.
+<!-- .element: class="fragment" data-fragment-index="1" -->  For example, using `scala.concurrent.Future` to do IO or other side effects makes it unlawful.
 
 
 Why is that law important?
@@ -35,7 +35,7 @@ for {
 
 ```scala
 def printAndReturnOne: Future[Int] =
-  Future { println(1); i }
+  Future { println(1); 1 }
 
 for {
   first  <- printAndReturnOne
@@ -46,7 +46,7 @@ for {
 
 ```scala
 val printAndReturnOne: Future[Int] =
-  Future { println(1); i }
+  Future { println(1); 1 }
 
 for {
   first  <- printAndReturnOne
@@ -62,7 +62,7 @@ Hard to reason about that.
 import cats.effect.IO
 
 def printAndReturnOne: IO[Int] =
-  IO { println(1); i }
+  IO { println(1); 1 }
 
 for {
   first  <- printAndReturnOne
