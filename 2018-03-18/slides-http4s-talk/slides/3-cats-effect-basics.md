@@ -2,4 +2,4 @@
 
 https://typelevel.org/cats-effect/
 
-![typeclasses](../assets/cats-effect-typeclasses.svg)
+![typeclasses](assets/cats-effect-typeclasses.svg)

@@ -9,6 +9,6 @@
 
 ## Cats Effect Contributor
 
-![contributors](../assets/cats-effect-contributors.png)
+![contributors](assets/cats-effect-contributors.png)
 
 And other libraries such as Fs2, Http4s, Circe, Fs2 Rabbit

@@ -4,7 +4,7 @@
 
 - Useful information
 
-![lambda](../assets/lambda.jpg)
+![lambda](assets/lambda.jpg)
 
 ---
 

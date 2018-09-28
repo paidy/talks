@@ -1,3 +1,3 @@
 ## Questions?
 
-![questions](../assets/questions.png)
+![questions](assets/questions.png)

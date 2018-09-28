@@ -44,7 +44,7 @@ val expr = Future(println("Hey!"))
 (Future(println("Hey!")), Future(println("Hey!")))
 ```
 
-![trolling](../assets/troll-face.png) <!-- .element: class="fragment" -->
+![trolling](assets/troll-face.png) <!-- .element: class="fragment" -->
 
 
 ## Referential Transparency
@@ -64,7 +64,7 @@ val expr = IO(println("Hey!"))
 (IO(println("Hey!")), IO(println("Hey!")))
 ```
 
-![winner](../assets/gentleman.png) <!-- .element: class="fragment" -->
+![winner](assets/gentleman.png) <!-- .element: class="fragment" -->
 
 
 ## Referential Transparency
