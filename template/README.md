@@ -5,14 +5,20 @@ Slides of the talk given by [Your Name](https://github.com/username) at the [Eve
 
 ### Setup
 
-Copy the files `package.json` and `Grunt.js` in your template folder. Take a look at the other templates to see how the `index.html` file looks like.
+- Copy `/template` to your `/$year-$/$title`.
+- Take a look at the other templates to see how to structure `./index.html`.
+  - Same goes for markdown syntax.
+- Use `./assets` for local assets.
+  - 'Global' Paidy assets are in [`/static/assets`](https://github.com/paidy/talks/tree/master/static/assets).
+  
+ - Add your talk to the list of talks in the [project README](https://github.com/paidy/talks/blob/master/README.md).
 
 ### How to start the server
 
 You need to install `nodejs` and `npm`.
 
 ```bash
-> cd slides-directory/
+> cd /$date/$title
 > npm install
 > npm start
 ```
