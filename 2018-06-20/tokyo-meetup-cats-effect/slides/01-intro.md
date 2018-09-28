@@ -1,4 +1,4 @@
 ## Cats Effect
 #### The IO Monad for Scala
 
-![cats](assets/cats-logo.png)
+![cats](../assets/cats-logo.png)

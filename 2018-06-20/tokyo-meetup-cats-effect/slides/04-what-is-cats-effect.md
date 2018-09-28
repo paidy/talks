@@ -2,7 +2,7 @@
 
 It provides a hierarchy of typeclasses to describe and compose effects
 
-![typeclasses](assets/cats-effect-typeclasses.png)
+![typeclasses](../assets/cats-effect-typeclasses.png)
 
 
 ## What is Cats Effect?
