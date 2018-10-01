@@ -29,28 +29,28 @@ module.exports = function(grunt) {
 				screwIE8: false
 			},
 			build: {
-				src: 'js/reveal.js',
-				dest: 'js/reveal.min.js'
+				src: 'https://rawgit.com/paidy/talks/master/static/js/reveal.js',
+				dest: 'https://rawgit.com/paidy/talks/master/static/js/reveal.min.js'
 			}
 		},
 
 		sass: {
 			core: {
-				src: 'css/reveal.scss',
-				dest: 'css/reveal.css'
+				src: 'https://rawgit.com/paidy/talks/master/static/css/reveal.scss',
+				dest: 'https://rawgit.com/paidy/talks/master/static/css/reveal.css'
 			},
 			themes: {
 				expand: true,
-				cwd: 'css/theme/source',
+				cwd: 'https://rawgit.com/paidy/talks/master/static/css/theme/source',
 				src: ['*.sass', '*.scss'],
-				dest: 'css/theme',
+				dest: 'https://rawgit.com/paidy/talks/master/static/css/theme',
 				ext: '.css'
 			}
 		},
 
 		autoprefixer: {
 			core: {
-				src: 'css/reveal.css'
+				src: 'https://rawgit.com/paidy/talks/master/static/css/reveal.css'
 			}
 		},
 
@@ -59,8 +59,8 @@ module.exports = function(grunt) {
 				compatibility: 'ie9'
 			},
 			compress: {
-				src: 'css/reveal.css',
-				dest: 'css/reveal.min.css'
+				src: 'https://rawgit.com/paidy/talks/master/static/css/reveal.css',
+				dest: 'https://rawgit.com/paidy/talks/master/static/css/reveal.min.css'
 			}
 		},
 
@@ -87,13 +87,12 @@ module.exports = function(grunt) {
 					exports: false
 				}
 			},
-			files: [ 'Gruntfile.js', 'js/reveal.js' ]
+			files: [ 'Gruntfile.js', 'https://rawgit.com/paidy/talks/master/static/js/reveal.js' ]
 		},
 
 		connect: {
 			server: {
 				options: {
-					hostname: 'localhost',
 					port: port,
 					base: root,
 					livereload: true,
@@ -107,11 +106,11 @@ module.exports = function(grunt) {
 			bundle: {
 				src: [
 					'index.html',
-					'css/**',
-					'js/**',
-					'lib/**',
-					'images/**',
-					'plugin/**',
+					'https://rawgit.com/paidy/talks/master/static/css/**',
+					'https://rawgit.com/paidy/talks/master/static/js/**',
+					'https://rawgit.com/paidy/talks/master/static/lib/**',
+					'https://rawgit.com/paidy/talks/master/static/images/**',
+					'https://rawgit.com/paidy/talks/master/static/plugin/**',
 					'**.md'
 				],
 				dest: 'reveal-js-presentation.zip'
@@ -120,20 +119,20 @@ module.exports = function(grunt) {
 
 		watch: {
 			js: {
-				files: [ 'Gruntfile.js', 'js/reveal.js' ],
+        files: [ 'Gruntfile.js', 'https://rawgit.com/paidy/talks/master/static/js/reveal.js' ],
 				tasks: 'js'
 			},
 			theme: {
 				files: [
-					'css/theme/source/*.sass',
-					'css/theme/source/*.scss',
-					'css/theme/template/*.sass',
-					'css/theme/template/*.scss'
+					'https://rawgit.com/paidy/talks/master/static/css/theme/source/*.sass',
+					'https://rawgit.com/paidy/talks/master/static/css/theme/source/*.scss',
+					'https://rawgit.com/paidy/talks/master/static/css/theme/template/*.sass',
+					'https://rawgit.com/paidy/talks/master/static/css/theme/template/*.scss'
 				],
 				tasks: 'css-themes'
 			},
 			css: {
-				files: [ 'css/reveal.scss' ],
+        files: [ 'https://rawgit.com/paidy/talks/master/static/css/reveal.scss' ],
 				tasks: 'css-core'
 			},
 			html: {
@@ -148,7 +147,7 @@ module.exports = function(grunt) {
 		},
 
 		retire: {
-			js: [ 'js/reveal.js', 'lib/js/*.js', 'plugin/**/*.js' ],
+			js: [ 'https://rawgit.com/paidy/talks/master/static/js/reveal.js', 'https://rawgit.com/paidy/talks/master/static/lib/js/*.js', 'https://rawgit.com/paidy/talks/master/static/plugin/**/*.js' ],
 			node: [ '.' ]
 		}
 
@@ -165,7 +164,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-retire' );
 	grunt.loadNpmTasks( 'grunt-sass' );
 	grunt.loadNpmTasks( 'grunt-zip' );
-	
+
 	// Default task
 	grunt.registerTask( 'default', [ 'css', 'js' ] );
 
