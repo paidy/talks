@@ -1,4 +1,4 @@
-[Title of your Talk]
+[Scala + Nvim]
 ====================
 
-Slides of the talk given by [Your Name](https://github.com/username) at the [Event](https://www.meetup.com/Tokyo-Scala-Developers/) on [month] [year].
+Slides of the talk given by [Paul Roseau](https://github.com/paulroseau) at the [Event](https://www.meetup.com/Tokyo-Scala-Developers/) on the 16th of October 2018.
