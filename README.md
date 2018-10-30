@@ -15,7 +15,7 @@ Adding your own talk
 
 - Copy `/template` to `/$year-month-day/$your-talk-title`.
 - Take a look at the other templates to see how to structure `./index.html` and `*.md` files.
-- Use `./assets` for local assets, and [`/static/assets`](https://github.com/paidy/talks/tree/master/static/assets) for 'global' Paidy assets.
+- Use `./assets` for local assets, and [`/docs/assets`](https://github.com/paidy/talks/tree/master/docs/assets) for 'global' Paidy assets.
 - Add your talk to the list of talks in the [project README](https://github.com/paidy/talks/blob/master/README.md).
 
 ### How to start the server
