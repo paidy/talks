@@ -4,6 +4,7 @@ Paidy Talks
 Public talks given by different speakers in representation of [Paidy Engineering](https://engineering.paidy.com/).
 
 - [Cats Effect: The IO Monad for Scala](https://paidy.github.io/talks/scalaio2018/) by [Gabriel Volpe](https://github.com/gvolpe) at [Scala IO 2018 - Lyon, France](https://scala.io/).
+- [NeoVim + Scala](https://paidy.github.io/talks/tokyo2018-nvim-scala/) by [Paul Roseau](https://github.com/paulroseau) at the [Tokyo Scala Developers Meetup](https://www.meetup.com/Tokyo-Scala-Developers/).
 - [Eff: One Monad to rule them all!](https://paidy.github.io/talks/tokyo2018-eff/) by [James Carragher](https://github.com/jcarrag) at the [Tokyo Scala Developers Meetup](https://www.meetup.com/Tokyo-Scala-Developers/).
 - [Introduction to Monads](https://paidy.github.io/talks/tokyo2018-monads/) by [Haemin Yoo](https://github.com/yoohaemin) at the [Tokyo Scala Developers Meetup](https://www.meetup.com/Tokyo-Scala-Developers/).
 - [Cats Effect: The IO Monad for Scala](https://paidy.github.io/talks/tokyo2018-cats-effect/) by [Gabriel Volpe](https://github.com/gvolpe) at the [Tokyo Scala Developers Meetup](https://www.meetup.com/Tokyo-Scala-Developers/).
