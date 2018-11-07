@@ -7,6 +7,3 @@
 - <!-- .element: class="fragment" data-fragment-index="4" --> Open Source Contributor
   + https://gvolpe.github.io/
 
-
-
-![profile](assets/github.png)
