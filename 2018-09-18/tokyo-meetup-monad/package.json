@@ -4,7 +4,7 @@
   "description": "The HTML Presentation Framework",
   "homepage": "http://revealjs.com",
   "subdomain": "revealjs",
-  "main": "https://rawgit.com/paidy/talks/master/static/js/reveal.js",
+  "main": "https://paidy.github.io/talks/js/reveal.js",
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve",
