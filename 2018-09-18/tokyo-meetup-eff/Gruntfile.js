@@ -29,28 +29,28 @@ module.exports = function(grunt) {
 				screwIE8: false
 			},
 			build: {
-				src: 'https://rawgit.com/paidy/talks/master/static/js/reveal.js',
-				dest: 'https://rawgit.com/paidy/talks/master/static/js/reveal.min.js'
+				src: 'https://paidy.github.io/talks/master/static/js/reveal.js',
+				dest: 'https://paidy.github.io/talks/master/static/js/reveal.min.js'
 			}
 		},
 
 		sass: {
 			core: {
-				src: 'https://rawgit.com/paidy/talks/master/static/css/reveal.scss',
-				dest: 'https://rawgit.com/paidy/talks/master/static/css/reveal.css'
+				src: 'https://paidy.github.io/talks/master/static/css/reveal.scss',
+				dest: 'https://paidy.github.io/talks/master/static/css/reveal.css'
 			},
 			themes: {
 				expand: true,
-				cwd: 'https://rawgit.com/paidy/talks/master/static/css/theme/source',
+				cwd: 'https://paidy.github.io/talks/master/static/css/theme/source',
 				src: ['*.sass', '*.scss'],
-				dest: 'https://rawgit.com/paidy/talks/master/static/css/theme',
+				dest: 'https://paidy.github.io/talks/master/static/css/theme',
 				ext: '.css'
 			}
 		},
 
 		autoprefixer: {
 			core: {
-				src: 'https://rawgit.com/paidy/talks/master/static/css/reveal.css'
+				src: 'https://paidy.github.io/talks/master/static/css/reveal.css'
 			}
 		},
 
@@ -59,8 +59,8 @@ module.exports = function(grunt) {
 				compatibility: 'ie9'
 			},
 			compress: {
-				src: 'https://rawgit.com/paidy/talks/master/static/css/reveal.css',
-				dest: 'https://rawgit.com/paidy/talks/master/static/css/reveal.min.css'
+				src: 'https://paidy.github.io/talks/master/static/css/reveal.css',
+				dest: 'https://paidy.github.io/talks/master/static/css/reveal.min.css'
 			}
 		},
 
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
 					exports: false
 				}
 			},
-			files: [ 'Gruntfile.js', 'https://rawgit.com/paidy/talks/master/static/js/reveal.js' ]
+			files: [ 'Gruntfile.js', 'https://paidy.github.io/talks/master/static/js/reveal.js' ]
 		},
 
 		connect: {
@@ -106,11 +106,11 @@ module.exports = function(grunt) {
 			bundle: {
 				src: [
 					'index.html',
-					'https://rawgit.com/paidy/talks/master/static/css/**',
-					'https://rawgit.com/paidy/talks/master/static/js/**',
-					'https://rawgit.com/paidy/talks/master/static/lib/**',
-					'https://rawgit.com/paidy/talks/master/static/images/**',
-					'https://rawgit.com/paidy/talks/master/static/plugin/**',
+					'https://paidy.github.io/talks/master/static/css/**',
+					'https://paidy.github.io/talks/master/static/js/**',
+					'https://paidy.github.io/talks/master/static/lib/**',
+					'https://paidy.github.io/talks/master/static/images/**',
+					'https://paidy.github.io/talks/master/static/plugin/**',
 					'**.md'
 				],
 				dest: 'reveal-js-presentation.zip'
@@ -119,20 +119,20 @@ module.exports = function(grunt) {
 
 		watch: {
 			js: {
-        files: [ 'Gruntfile.js', 'https://rawgit.com/paidy/talks/master/static/js/reveal.js' ],
+        files: [ 'Gruntfile.js', 'https://paidy.github.io/talks/master/static/js/reveal.js' ],
 				tasks: 'js'
 			},
 			theme: {
 				files: [
-					'https://rawgit.com/paidy/talks/master/static/css/theme/source/*.sass',
-					'https://rawgit.com/paidy/talks/master/static/css/theme/source/*.scss',
-					'https://rawgit.com/paidy/talks/master/static/css/theme/template/*.sass',
-					'https://rawgit.com/paidy/talks/master/static/css/theme/template/*.scss'
+					'https://paidy.github.io/talks/master/static/css/theme/source/*.sass',
+					'https://paidy.github.io/talks/master/static/css/theme/source/*.scss',
+					'https://paidy.github.io/talks/master/static/css/theme/template/*.sass',
+					'https://paidy.github.io/talks/master/static/css/theme/template/*.scss'
 				],
 				tasks: 'css-themes'
 			},
 			css: {
-        files: [ 'https://rawgit.com/paidy/talks/master/static/css/reveal.scss' ],
+        files: [ 'https://paidy.github.io/talks/master/static/css/reveal.scss' ],
 				tasks: 'css-core'
 			},
 			html: {
@@ -147,7 +147,7 @@ module.exports = function(grunt) {
 		},
 
 		retire: {
-			js: [ 'https://rawgit.com/paidy/talks/master/static/js/reveal.js', 'https://rawgit.com/paidy/talks/master/static/lib/js/*.js', 'https://rawgit.com/paidy/talks/master/static/plugin/**/*.js' ],
+			js: [ 'https://paidy.github.io/talks/master/static/js/reveal.js', 'https://paidy.github.io/talks/master/static/lib/js/*.js', 'https://paidy.github.io/talks/master/static/plugin/**/*.js' ],
 			node: [ '.' ]
 		}
 
