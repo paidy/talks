@@ -1,6 +1,6 @@
 ## What we've seen so far
 
-- Composing programs using IO
+- From IO to Tagless Final
 - Sync[F]: StdConsole[F]
 - Async[F]: RemoteConsole[F]
 - Testing: TestConsole[F] + Ref[F, A]

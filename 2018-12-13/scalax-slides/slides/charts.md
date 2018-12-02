@@ -213,7 +213,7 @@ val tvChart: TvChart[IO]          = new MemTvChart[IO]
 
 val charts = new Charts[IO](source, idGen, internal, radioChart, tvChart)
 
-charts.generate.unsafeRunSync()
+charts.generate.unsafeRunSync() // HINT: Use `IOApp` instead
 ```
 
 

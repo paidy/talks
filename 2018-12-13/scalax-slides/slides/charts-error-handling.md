@@ -3,7 +3,7 @@
 ```scala
 val charts = new Charts[IO](source, idGen, internal, radioChart, tvChart)
 
-charts.generate.unsafeRunSync()
+charts.generate.unsafeRunSync() // HINT: Use `IOApp` instead
 ```
 
 <!-- .element: class="fragment" data-fragment-index="1" --> What about error handling?

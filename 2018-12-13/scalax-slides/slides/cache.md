@@ -52,3 +52,9 @@ object Cache {
 }
 ```
 
+
+## Ref-based Cache
+
+It is now part of Mules!
+
+https://github.com/ChristopherDavenport/mules
