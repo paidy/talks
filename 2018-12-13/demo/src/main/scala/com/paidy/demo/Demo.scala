@@ -124,7 +124,7 @@ object Demo extends IOApp {
       IO.pure(bands) <* IO(br.close())
     }
 
-  def putStrLn(str: String): IO[Unit] = IO(println(str))
+  def putStrLn[A](a: A): IO[Unit] = IO(println(a))
 
   def publishRadioChart(id: UUID, bands: SortedSet[Band]): IO[Unit] =
     putStrLn(s"Radio Chart for $id: ${bands.map(_.value).mkString(", ")}")
