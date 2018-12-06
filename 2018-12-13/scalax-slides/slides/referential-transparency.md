@@ -72,3 +72,11 @@ val expr = IO(println("Hey!"))
 `IO[A]`
 
 Represents the intention to perform a side effect
+
+
+## Referential Transparency
+
+- Enables composition
+- Local reasoning
+- Fearless refactoring
+
