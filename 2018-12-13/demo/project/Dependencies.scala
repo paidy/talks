@@ -12,6 +12,7 @@ object Dependencies {
 
     val kindProjector    = "0.9.8"
     val betterMonadicFor = "0.3.0-M2"
+    val typedHoles       = "0.0.2"
 
     val scalaTest  = "3.0.5"
     val scalaCheck = "1.14.0"
@@ -24,6 +25,7 @@ object Dependencies {
 
     lazy val kindProjector    = "org.spire-math" % "kind-projector" % Versions.kindProjector cross CrossVersion.binary
     lazy val betterMonadicFor = "com.olegpy" %% "better-monadic-for" % Versions.betterMonadicFor
+    lazy val typedHoles       = "com.github.cb372" %% "scala-typed-holes" % Versions.typedHoles
 
     lazy val slf4j   = "org.slf4j" % "slf4j-api" % Versions.slf4j
     lazy val logback = "ch.qos.logback" % "logback-classic" % Versions.logback
