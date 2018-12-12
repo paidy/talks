@@ -3,9 +3,9 @@ import sbt._
 object Dependencies {
 
   object Versions {
-    val catsEffect = "1.0.0"
+    val catsEffect = "1.1.0"
     val catsPar    = "0.2.0"
-    val fs2        = "1.0.0-RC2"
+    val fs2        = "1.0.0"
 
     val slf4j      = "1.7.25"
     val logback    = "1.1.3"

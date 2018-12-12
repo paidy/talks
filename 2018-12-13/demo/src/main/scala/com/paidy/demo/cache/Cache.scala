@@ -69,10 +69,10 @@ object Cache {
     *
     * @return an `[F[Cache[F, K, V]]` that will create a Cache with key-expiration support when evaluated.
     * */
-  def of[F[_]: Clock: Concurrent, K, V](
+  def of[F[_]: Clock: Concurrent: Timer, K, V](
       expiresIn: FiniteDuration,
       checkOnExpirationsEvery: FiniteDuration
-  )(implicit T: Timer[F]): F[Cache[F, K, V]] = {
+  ): F[Cache[F, K, V]] = {
     def runExpiration(state: Ref[F, Map[K, (OffsetDateTime, V)]]): F[Unit] = {
       val process =
         DateTime[F](CacheOffset).flatMap { now =>
@@ -85,7 +85,7 @@ object Cache {
             .flatTap(state.set)
         }
 
-      T.sleep(checkOnExpirationsEvery) >> process >> runExpiration(state)
+      Timer[F].sleep(checkOnExpirationsEvery) >> process >> runExpiration(state)
     }
 
     Ref

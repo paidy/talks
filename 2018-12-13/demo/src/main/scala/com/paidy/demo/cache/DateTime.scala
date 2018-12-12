@@ -30,8 +30,8 @@ import cats.syntax.functor._
 
 object DateTime {
 
-  def apply[F[_]: Functor](zoneOffset: ZoneOffset)(implicit clock: Clock[F]): F[OffsetDateTime] =
-    clock.realTime(TimeUnit.MILLISECONDS).map(offsetDateTime(_, zoneOffset))
+  def apply[F[_]: Clock: Functor](zoneOffset: ZoneOffset): F[OffsetDateTime] =
+    Clock[F].realTime(TimeUnit.MILLISECONDS).map(offsetDateTime(_, zoneOffset))
 
   private def offsetDateTime(millis: Long, zoneOffset: ZoneOffset): OffsetDateTime =
     OffsetDateTime.ofInstant(Instant.ofEpochMilli(millis), zoneOffset)
