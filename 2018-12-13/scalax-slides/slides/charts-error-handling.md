@@ -71,3 +71,12 @@ Program failed after many retries
 - <!-- .element: class="fragment" data-fragment-index="2" --> Look into [cats-retry](https://cb372.github.io/cats-retry/) and its retry policies.
 - <!-- .element: class="fragment" data-fragment-index="3" --> Use the high-level [fs2](http://fs2.io) combinators such as `retry`, `attempts`, `awakeEvery`, etc
 
+
+## Error Handling
+
+#### Classy optics
+
+For a more advanced technique check out my two blog posts:
+
+- https://typelevel.org/blog/2018/08/25/http4s-error-handling-mtl.html
+- https://typelevel.org/blog/2018/11/28/http4s-error-handling-mtl-2.html

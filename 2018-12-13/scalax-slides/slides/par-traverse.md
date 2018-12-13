@@ -38,7 +38,7 @@ TaskUtil.collectSuccessful(list).flatMap(putStrLn)
 ```
 
 ```
-res1: List[String] = List(b, a)
+res2: List[String] = List(b, a)
 ```
 
 
