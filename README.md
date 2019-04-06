@@ -3,6 +3,7 @@ Paidy Talks
 
 Public talks given by different speakers in representation of [Paidy Engineering](https://engineering.paidy.com/).
 
+- [Up your MTL game with classy optics](https://paidy.github.io/talks/scalar2019/) by [Gabriel Volpe](https://github.com/gvolpe) at the [Scalar 2019 - Warsaw, Poland](http://scalar-conf.com/).
 - [Haskell for Scala developers](https://paidy.github.io/talks/tokyo2019-haskell/) by [Gabriel Volpe](https://github.com/gvolpe) at the [Tokyo Scala Developers Meetup](https://www.meetup.com/Tokyo-Scala-Developers/).
 - [Cats Effect, tagless final & beyond!](https://paidy.github.io/talks/scalax2018/) by [Gabriel Volpe](https://github.com/gvolpe) at [Scala eXchange 2018 - London, UK](https://skillsmatter.com/conferences/10488-scala-exchange-2018).
 - [Cats Effect: The IO Monad for Scala](https://paidy.github.io/talks/scalaio2018/) by [Gabriel Volpe](https://github.com/gvolpe) at [Scala IO 2018 - Lyon, France](https://scala.io/).
