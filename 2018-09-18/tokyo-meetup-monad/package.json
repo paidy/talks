@@ -8,7 +8,9 @@
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve",
-    "build": "grunt"
+    "build": "grunt",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": {
     "name": "Hakim El Hattab",
@@ -41,6 +43,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "npm": "^6.4.1"
-  }
+    "npm": "^6.4.1",
+    "snyk": "^1.230.5"
+  },
+  "snyk": true
 }
